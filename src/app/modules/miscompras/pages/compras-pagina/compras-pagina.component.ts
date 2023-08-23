@@ -8,6 +8,7 @@ export interface Product {
   imageUrl: string;
   cantidad: number; // Nueva propiedad para la cantidad de productos en el carrito
   importe: number; // Nueva propiedad para el importe total del producto en el carrito
+  propietario:string;
 }
 @Component({
   selector: 'app-compras-pagina',

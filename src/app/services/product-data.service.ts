@@ -12,12 +12,12 @@ export class ProductDataService {
   private products: any[] = [
     // { id: 1, name: 'Producto 1', category: 'Electrónicos' },
     // { id: 2, name: 'Producto 2', category: 'Ropa' }, 
-    { id: 1,nombre: 'Queso', imageUrl: '/assets/quesoayaviri.jpeg' ,precio: 20,cantidad:1,importe:20},
-    { id: 2,nombre: 'Torta de Quinua', imageUrl: '/assets/torta.jpeg' ,precio: 25,cantidad:1,importe:25},
-    { id: 3,nombre: 'Miel de abeja', imageUrl: '/assets/miel.jpg',precio: 30,cantidad:1,importe:30 },
-    { id: 4,nombre: 'Moraya', imageUrl: '/assets/moraya.jpg' ,precio: 15,cantidad:1,importe:15},
-    { id: 5,nombre: 'Yogurt', imageUrl: '/assets/yogurt.jpg',precio: 8,cantidad:1,importe:8 },
-    { id: 6,nombre: 'Pollo a la brasa', imageUrl: '/assets/polloalabrasa.jpeg',precio: 12,cantidad:1,importe:12 }
+    { id: 1,nombre: 'Queso', imageUrl: '/assets/quesoayaviri.jpeg' ,precio: 20,cantidad:1,importe:20,propietario:'Sabatina'},
+    { id: 2,nombre: 'Torta de Quinua', imageUrl: '/assets/torta.jpeg' ,precio: 25,cantidad:1,importe:25,propietario:'Sabatina'},
+    { id: 3,nombre: 'Miel de abeja', imageUrl: '/assets/miel.jpg',precio: 30,cantidad:1,importe:30 ,propietario:'Sabatina'},
+    { id: 4,nombre: 'Moraya', imageUrl: '/assets/moraya.jpg' ,precio: 15,cantidad:1,importe:15,propietario:'Sabatina'},
+    { id: 5,nombre: 'Yogurt', imageUrl: '/assets/yogurt.jpg',precio: 8,cantidad:1,importe:8 ,propietario:'Sabatina'},
+    { id: 6,nombre: 'Pollo a la brasa', imageUrl: '/assets/polloalabrasa.jpeg',precio: 12,cantidad:1,importe:12 ,propietario:'El Galpon'}
   ];
   constructor() { }
 

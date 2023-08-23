@@ -2,8 +2,8 @@
     <img [src]="product.imageUrl" alt="Producto 1">
     <div class="product-info">
       <div class="product-name">{{product.nombre}}</div>
-      <div class="product-price">$19.99</div>
-      <div class="product-rating">Calificación: 4.5</div>
+      <div class="product-price">S/ {{product.precio}}</div>
+      <div class="product-rating">{{product.propietario}}</div>
     </div>
     <button class="order-button" (click)="onResultClick(product)">Pedir <i class="uil uil-plus-circle"></i></button>
   </div>
