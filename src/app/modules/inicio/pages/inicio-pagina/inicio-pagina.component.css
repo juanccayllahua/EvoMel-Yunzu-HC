@@ -1,0 +1,10 @@
+.principal {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Establece la altura al 100% de la altura de la ventana */
+}
+
+.contenedor {
+    flex: 1; /* Permite que el contenedor ocupe el espacio disponible en el contenedor principal */
+    overflow-y: auto; /* Habilita la barra de desplazamiento vertical si el contenido excede la altura del contenedor */
+}

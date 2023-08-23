@@ -1,0 +1,25 @@
+<!-- carrito.component.html -->
+<div class="carrito-container">
+  <h2>Tu Carrito de Compras</h2>
+  <ul class="carrito-items">
+    <li *ngFor="let producto of carrito; let i = index" class="carrito-item">
+      <div class="producto-details">
+        <img [src]="producto.imageUrl" [alt]="producto.nombre" class="producto-image">
+        <div class="producto-info">
+          <h3>{{ producto.nombre }}</h3>
+          <p>Precio Unitario: S/ {{ producto.precio }}</p>
+        </div>
+      </div> 
+      <input type="number" class="quantity-input" [(ngModel)]="producto.cantidad" (input)="actualizarCantidad(producto)" inputmode="numeric" min="1" disableUpDownButtons>
+
+      
+      <p class="item-total">{{ producto.importe }}</p>
+      <button (click)="eliminarDelCarrito(i , producto.id)" class="remove-button">Eliminar <i class="uil uil-trash-alt"></i></button>
+    </li>
+  </ul>
+  <div class="cart-summary">
+    <p>Total: S/  {{ importeTotal }}</p>
+     
+    <button (click)="redirectToPagoYConfirmar()" class="checkout-button">Pagar</button>
+  </div>
+</div>

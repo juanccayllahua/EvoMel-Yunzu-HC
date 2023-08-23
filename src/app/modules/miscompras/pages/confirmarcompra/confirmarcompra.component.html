@@ -1,0 +1,41 @@
+<div class="pago-container">
+    <h2>Proceso de Pago</h2>
+    <div class="form-container">
+      <div class="form-column">
+        <form class="pago-form">
+          <h3>Datos de Pago</h3>
+          <label>Método de Pago:</label>
+          <label>
+            <input type="radio" name="metodoPago" value="tarjeta" checked>
+            Tarjeta de Crédito
+          </label>
+          <label>
+            <input type="radio" name="metodoPago" value="efectivo">
+            Efectivo
+          </label>
+          <label for="nombre">Nombre Completo:</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Nombre Completo">
+          <label for="tarjeta">Número de Tarjeta:</label>
+          <input type="text" id="tarjeta" name="tarjeta" placeholder="**** **** **** 1234">
+          <label for="expiracion">Fecha de Expiración:</label>
+          <input type="text" id="expiracion" name="expiracion" placeholder="MM/AA">
+          <label for="cvv">CVV:</label>
+          <input type="text" id="cvv" name="cvv" placeholder="CVV">
+        </form>
+      </div>
+      <div class="form-column">
+        <form class="datos-form">
+          <h3>Datos Personales</h3>
+          <label for="nombreUsuario">Nombre Completo:</label>
+          <input type="text" id="nombreUsuario" name="nombreUsuario" placeholder="Nombre Completo">
+          <label for="direccion">Dirección:</label>
+          <input type="text" id="direccion" name="direccion" placeholder="Dirección">
+          <label for="numeroCelular">Número de Celular:</label>
+          <input type="text" id="numeroCelular" name="numeroCelular" placeholder="Número de Celular">
+        </form>
+      </div>
+    </div>
+    <button (click)="redirectToPagoYConfirmar()" type="button">Realizar Pago</button>
+     
+  </div>
+  

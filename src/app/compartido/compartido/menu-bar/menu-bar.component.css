@@ -1,0 +1,157 @@
+ .sticky-header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background-color: #ffffff;
+   /* Cambia esto al color deseado */
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+   z-index: 1000;
+   /* Asegura que el menú se muestre encima del contenido */
+ }
+
+ .logo a {
+   text-decoration: none;
+   /* Quita la decoración de subrayado */
+ }
+
+ header {
+   background-color: #fff;
+   color: #B966DB;
+   padding: 10px 0;
+   height: 40px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   /* font-size: 20px; */
+ }
+
+ .logo h1 {
+   font-size: 24px;
+   margin: 0;
+   margin-left: 20px;
+   color: #B966DB;
+ }
+
+ .menu-list {
+   list-style: none;
+   display: flex;
+   align-items: center;
+ }
+
+ .menu-list li {
+   margin-right: 20px;
+ }
+
+ .menu-list li:last-child {
+   margin-right: 0;
+ }
+
+ .menu-list a {
+   color: #646464;
+   text-decoration: none;
+   transition: color 0.3s;
+ }
+
+ .menu-list a:hover {
+   color: #B966DB;
+ }
+
+ .menu {
+   margin-right: 40px;
+   /* position: relative; */
+ }
+
+ .menu::after {
+   content: "";
+   display: block;
+   position: absolute;
+   bottom: -5px;
+   left: 0;
+   width: 100%;
+   height: 5px;
+   background: rgba(0, 0, 0, 0.2);
+   z-index: -1;
+ }
+
+ .search-container {
+   position: relative;
+ }
+
+ .search-input {
+   padding: 8px;
+   width: 400px;
+   border-radius: 4px;
+   border: 1px solid rgb(201, 201, 201);
+ }
+
+ .search-input::placeholder {
+   color: rgb(99, 99, 99);
+ }
+
+
+ .search-results {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   position: absolute;
+   width: 420px;
+   background-color: #fff;
+   border: 1px solid #ccc;
+   border-top: none;
+   z-index: 1;
+ }
+
+ .search-results li {
+   display: flex;
+   align-items: center;
+   padding: 5px;
+   /* border-bottom: 1px solid #ccc; */
+   cursor: pointer;
+ }
+
+ .search-results li img {
+   width: 40px;
+   height: 40px;
+   margin-right: 10px;
+   border-radius: 50%;
+   /* Hace que la imagen sea un círculo */
+   object-fit: cover;
+   /* Ajusta la imagen al círculo */
+ }
+
+ .search-results li {
+   padding: 5px;
+   height: 40px;
+   color: #333;
+   /* background-color: ; */
+   /* border-bottom: 1px solid #ccc; */
+   cursor: pointer;
+ }
+
+ .search-results li:last-child {
+   border-bottom: none;
+ }
+
+ .search-results li:hover {
+   background-color: #f5f5f5;
+ }
+
+
+ .search-results li span {
+   flex-grow: 1; 
+ }
+
+ .search-results li:last-child {
+   border-bottom: none;
+ }
+
+ .search-results li:hover {
+   background-color: #f5f5f5;
+ }
+
+ .carr-cls a {
+   font-weight: 600;
+   color: #B966DB !important;
+ }

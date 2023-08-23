@@ -1,0 +1,94 @@
+/* carrito.component.css */
+.carrito-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #ffffff; /* Fondo blanco */
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #B966DB; /* Color morado */
+}
+
+.carrito-items {
+  list-style: none;
+  padding: 0;
+}
+
+.carrito-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.producto-details {
+  display: flex;
+  align-items: center;
+}
+
+.producto-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.producto-info {
+  flex-grow: 1;
+}
+
+.quantity-input {
+  width: 40px;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.item-total {
+  font-weight: bold;
+}
+
+.remove-button {
+  border-radius: 5px;
+  background-color: #B966DB;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.cart-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.checkout-button {
+  border-radius: 2px;
+  background-color: #2bc779; /* Color morado */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+
+.quantity-input::-webkit-inner-spin-button,
+.quantity-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.quantity-input {
+  -moz-appearance: textfield; /* Firefox */
+}

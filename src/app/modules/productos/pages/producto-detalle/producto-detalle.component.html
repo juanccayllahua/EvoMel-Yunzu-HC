@@ -1,0 +1,23 @@
+<div class="detalleProducto">
+    <div class="producto-container">
+      <div class="producto-image">
+        <img [src]="product.imageUrl" alt="{{ product.nombre  }}">
+      </div>
+      <div class="producto-details">
+        <h2 class="producto-title">{{ product.nombre }}</h2>
+        <div class="producto-description">
+          <p>Este es un producto de alta calidad que te encantará. ¡No te pierdas la oportunidad de adquirirlo hoy mismo!</p>
+        </div>
+        <div class="producto-more-details">
+          <h3>Detalles</h3>
+          <ul>
+            <li><strong>Precio:</strong> $29.99</li>
+            <li><strong>Stock Disponible:</strong> 50 unidades</li>
+            <!-- Agregar más detalles relevantes aquí -->
+          </ul>
+        </div>
+        <button class="btn-agregar-carrito" (click)="agregarAlCarrito(product)" >Agregar al Carrito <i class="uil uil-plus-circle"></i></button>
+      </div>
+    </div>
+  </div>
+   

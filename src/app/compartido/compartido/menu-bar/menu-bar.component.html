@@ -1,0 +1,33 @@
+<header class="sticky-header">
+  <div class="logo">
+    <a href="/">
+      <h1>EvoMel</h1>
+    </a>
+  </div>
+  <div class="search-container">
+    <input type="text" class="search-input" placeholder="Productos Naturales, agricultura, Restaurante" [(ngModel)]="inputText"
+      (input)="onSearchInput($event)">
+    <ul class="search-results" *ngIf="searchResults.length > 0 && characterCount>0 && isResultsVisible">
+      <li *ngFor="let result of searchResults" (click)="onResultClick(result)">
+        <div (blur)="onSearchBlur()">
+          <img [src]="result.imageUrl" alt="Imagen de {{ result.nombre }}" width="50px" height="45px">
+          <span>{{ result.nombre }}</span>
+        </div>
+      </li>
+    </ul>
+
+  </div>
+  
+  <!-- <div>Caracteres ingresados: {{ characterCount }}</div> -->
+  <nav class="menu">
+    <ul class="menu-list">
+      <li><a href="/">Productos</a></li>
+      <li class="btn-ingresar"><a href="/">
+          Yunzu <i class="uil uil-user-circle"></i> </a> </li>
+      <li class="carr-cls"><a href="/compras"><i class="uil uil-shopping-cart-alt"></i>
+        {{cantidadProd}}
+      </a></li> 
+
+    </ul>
+  </nav>
+</header>
